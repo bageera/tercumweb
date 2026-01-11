@@ -1,0 +1,247 @@
+/* ==================================================
+   POLISH PASS — FAST VISUAL IMPROVEMENTS
+   Safe, non-breaking, deadline-friendly
+   ================================================== */
+
+/* ---------- Global Typography ---------- */
+
+body {
+    font-weight: 400;
+    color: #222;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  /* ---------- Hero / Slider ---------- */
+  
+  .slider-content h2 {
+    font-size: 48px;
+    max-width: 720px;
+  }
+  
+  .slider-content p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  
+  /* ---------- Section Spacing ---------- */
+  
+  .services-area,
+  .about-area,
+  .partner-area,
+  .choose-area {
+    background-color: #f9fafb;
+  }
+  
+  .services-area {
+    background-color: #ffffff;
+  }
+  
+  .section-title {
+    margin-bottom: 60px;
+  }
+  
+  .section-title span {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* ---------- Service Cards ---------- */
+  
+  .single-services-box {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 6px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+  
+  .single-services-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+  }
+  
+  .single-services-box h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .single-services-box p {
+    margin-top: 12px;
+  }
+  
+  /* ---------- About Section ---------- */
+  
+  .about-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* ---------- CTA ---------- */
+  
+  .cta-area {
+    background: #0b1f33;
+    padding: 70px 0;
+  }
+  
+  .cta-content h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+  
+  .cta-content .btn {
+    background: #ffffff;
+    color: #0b1f33;
+    font-weight: 600;
+    padding: 14px 36px;
+  }
+  
+  /* ---------- Breadcrumb ---------- */
+  
+  .page-title-area {
+    padding: 80px 0 60px;
+  }
+  
+  /* ---------- Mobile Tweaks ---------- */
+  
+  @media (max-width: 767px) {
+    .slider-content h2 {
+      font-size: 34px;
+    }
+  }
+  
+  /* ==================================================
+   FINAL POLISH PASS — BRAND FINISH
+   ================================================== */
+
+/* ---------- Header / Nav ---------- */
+
+.header-top-area {
+    background-color: #0b1f33;
+    color: #ffffff;
+  }
+  
+  .header-top-area a,
+  .header-top-area li {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .header-menu-area {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  
+  /* ---------- Hero Contrast ---------- */
+  
+  .single-slider::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 31, 51, 0.55);
+  }
+  
+  .single-slider {
+    position: relative;
+  }
+  
+  .slider-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .slider-content .btn {
+    background-color: #ffffff;
+    color: #0b1f33;
+    font-weight: 600;
+    padding: 14px 34px;
+  }
+  
+  /* ---------- Section Headings ---------- */
+  
+  .section-title h2 {
+    font-size: 36px;
+  }
+  
+  .section-title p {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  
+  /* ---------- Services Cards ---------- */
+  
+  .single-services-box {
+    text-align: left;
+  }
+  
+  .single-services-box h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  
+  .single-services-box .read-more {
+    font-weight: 600;
+    color: #0b1f33;
+  }
+  
+  .single-services-box .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* ---------- About Section ---------- */
+  
+  .about-content span {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .about-content h2 {
+    margin-top: 10px;
+  }
+  
+  /* ---------- Footer ---------- */
+  
+  .footer-area {
+    background-color: #0b1f33;
+    color: #ffffff;
+  }
+  
+  .footer-area a {
+    color: #ffffff;
+  }
+  
+  .footer-area p {
+    color: #cfd6dd;
+  }
+  
+  /* ---------- Mobile Refinement ---------- */
+  
+  @media (max-width: 767px) {
+    .section-title h2 {
+      font-size: 28px;
+    }
+  
+    .slider-content h2 {
+      font-size: 30px;
+    }
+  }
+
+  
+  .alert-danger {
+    background-color: #fbeaea;
+    border-color: #f1bcbc;
+    color: #7a1f1f;
+  }
+  
