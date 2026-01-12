@@ -20,9 +20,9 @@
                 <span class="sub-title">About Tercum LLC</span>
                 <h1>Experience. Reliability. Execution.</h1>
                 <p>
-                    Tercum LLC is a logistics and maritime services company focused on
-                    delivering reliable, compliant, and well-managed solutions for
-                    organizations operating in complex and demanding environments.
+                    Tercum LLC is a logistics and maritime services firm focused on delivering
+                    reliable, compliant, and well-managed solutions for organizations operating
+                    in complex and demanding environments.
                 </p>
             </div>
         </div>
@@ -34,38 +34,39 @@
     <div class="container">
         <div class="row align-items-center">
 
+            {{-- LEFT --}}
             <div class="col-lg-6">
                 <div class="about-content">
                     <span>Who We Are</span>
                     <h2>A Trusted Partner in Maritime & Logistics Operations</h2>
                     <p>
-                        Tercum LLC works with commercial, government, and environmental
-                        organizations to support transportation, logistics, and maritime
-                        operations where reliability and accountability matter.
+                        Tercum LLC supports commercial, government, and environmental
+                        organizations with transportation, logistics, and maritime services
+                        where reliability, accountability, and coordination are critical.
                     </p>
                     <p>
-                        Our team brings together operational experience and disciplined
-                        program management to ensure projects are delivered safely,
-                        efficiently, and in alignment with regulatory and operational
-                        requirements.
+                        Our team combines operational experience with disciplined program
+                        management to ensure every engagement is executed safely, efficiently,
+                        and in alignment with regulatory and operational requirements.
                     </p>
                 </div>
             </div>
 
+            {{-- RIGHT --}}
             <div class="col-lg-6">
                 <div class="about-content">
                     <span>How We Work</span>
                     <h2>Focused on Outcomes</h2>
                     <p>
                         We take a structured, hands-on approach to managing logistics and
-                        maritime initiatives — coordinating suppliers, monitoring progress,
-                        and maintaining clear communication throughout execution.
+                        maritime initiatives — coordinating suppliers, monitoring execution,
+                        and maintaining clear communication from planning through completion.
                     </p>
                     <ul class="about-list">
-                        <li>End-to-end project and logistics management</li>
+                        <li>End-to-end logistics and project coordination</li>
                         <li>Maritime and environmental domain expertise</li>
-                        <li>Compliance-focused operational execution</li>
-                        <li>Clear reporting and accountability</li>
+                        <li>Compliance-driven operational execution</li>
+                        <li>Clear reporting, risk awareness, and accountability</li>
                     </ul>
                 </div>
             </div>
@@ -82,8 +83,8 @@
             <span>Our Values</span>
             <h2>What Guides Our Work</h2>
             <p>
-                Every engagement is grounded in principles that support long-term
-                partnerships and operational success.
+                Every engagement is grounded in principles that support operational excellence
+                and long-term partnerships.
             </p>
         </div>
 
@@ -93,8 +94,8 @@
                 <div class="single-services-box">
                     <h3>Reliability</h3>
                     <p>
-                        We understand that our clients depend on predictable execution.
-                        We plan carefully, communicate clearly, and deliver consistently.
+                        Our clients depend on predictable execution. We plan thoroughly,
+                        communicate proactively, and deliver consistently.
                     </p>
                 </div>
             </div>
@@ -103,8 +104,8 @@
                 <div class="single-services-box">
                     <h3>Accountability</h3>
                     <p>
-                        We take ownership of our work and stand behind our commitments,
-                        ensuring transparency and trust throughout every engagement.
+                        We take ownership of our work and our commitments, ensuring transparency
+                        and trust throughout every engagement.
                     </p>
                 </div>
             </div>
@@ -113,8 +114,8 @@
                 <div class="single-services-box">
                     <h3>Professionalism</h3>
                     <p>
-                        Our team operates with discipline, integrity, and respect for
-                        regulatory, environmental, and operational requirements.
+                        We operate with discipline, integrity, and respect for regulatory,
+                        environmental, and operational requirements.
                     </p>
                 </div>
             </div>

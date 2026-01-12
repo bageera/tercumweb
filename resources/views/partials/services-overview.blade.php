@@ -1,50 +1,32 @@
 @php
-    // Brochure-aligned service definitions (safe defaults)
     $services = $services ?? [
         [
-            'title' => 'Program & Management Services',
-            'description' =>
-                'Project planning, lifecycle management, and supplier coordination to deliver turnkey maritime and logistics solutions from initial concept through operational handoff.',
-            'image' => 'assets/transland/images/service/service1.jpg',
-            'link' => url(app()->getLocale().'/contact'),
+            'title' => 'Maritime Shipping',
+            'description' => 'Port coordination, vessel support, and maritime logistics services supporting domestic and international operations.',
+            'image' => 'assets/transland/images/services/service-maritime-ops.jpg',
+            'link' => url(app()->getLocale().'/services'),
         ],
         [
-            'title' => 'Maritime Monitoring & Environmental Intelligence',
-            'description' =>
-                'Advanced systems for monitoring aquatic habitats, marine life populations, and environmental conditions to support compliance, sustainability, and situational awareness.',
-            'image' => 'assets/transland/images/service/service2.jpg',
-            'link' => url(app()->getLocale().'/contact'),
+            'title' => 'Air Freight',
+            'description' => 'Time-critical air freight coordination for priority cargo and international supply chains.',
+            'image' => 'assets/transland/images/services/service-air-freight.jpg',
+            'link' => url(app()->getLocale().'/services'),
         ],
         [
-            'title' => 'Pollution Detection & Evidence Collection',
-            'description' =>
-                'Real-time detection of hydrocarbons, waste, and other pollutants, providing actionable data and evidentiary records for response, enforcement, and long-term monitoring.',
-            'image' => 'assets/transland/images/service/service3.jpg',
-            'link' => url(app()->getLocale().'/contact'),
+            'title' => 'Freight & Logistics',
+            'description' => 'End-to-end freight coordination with an emphasis on reliability, compliance, and operational continuity.',
+            'image' => 'assets/transland/images/services/service-logistics-coordination.jpg',
+            'link' => url(app()->getLocale().'/services'),
         ],
         [
-            'title' => 'Maritime Communications & Domain Awareness',
-            'description' =>
-                'Extended communications and surveillance capabilities that maintain connectivity and situational awareness beyond traditional shore-based coverage.',
-            'image' => 'assets/transland/images/service/service4.jpg',
-            'link' => url(app()->getLocale().'/contact'),
-        ],
-        [
-            'title' => 'Surveillance & Security Solutions',
-            'description' =>
-                'Persistent maritime surveillance and domain awareness systems supporting government, defense, and commercial security operations in complex maritime environments.',
-            'image' => 'assets/transland/images/service/service5.jpg',
-            'link' => url(app()->getLocale().'/contact'),
-        ],
-        [
-            'title' => 'Integrated Maritime Systems',
-            'description' =>
-                'Digital maritime fencing, surface and subsurface detection, multi-object tracking, and seamless integration into network operations centers (NOC).',
-            'image' => 'assets/transland/images/service/service6.jpg',
-            'link' => url(app()->getLocale().'/contact'),
+            'title' => 'Procurement Services',
+            'description' => 'Sourcing and procurement support for logistics-related goods, equipment, and operational requirements.',
+            'image' => 'assets/transland/images/services/service-procurement.jpg',
+            'link' => url(app()->getLocale().'/services'),
         ],
     ];
 @endphp
+
 
 <section class="services-area pt-100 pb-70">
     <div class="container">

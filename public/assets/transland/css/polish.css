@@ -1,11 +1,13 @@
 /* ==================================================
-   POLISH PASS — FAST VISUAL IMPROVEMENTS
+   POLISH PASS — BUSINESS-GRADE VISUAL FINISH
    Safe, non-breaking, deadline-friendly
    ================================================== */
 
-/* ---------- Global Typography ---------- */
+/* ==================================================
+   Global Typography
+   ================================================== */
 
-body {
+   body {
     font-weight: 400;
     color: #222;
   }
@@ -24,20 +26,220 @@ body {
     color: #555;
   }
   
-  /* ---------- Hero / Slider ---------- */
+  /* ==================================================
+     Header / Navigation
+     ================================================== */
+  
+  .header-area,
+  .main-navbar {
+    background-color: #0b1f33;
+  }
+  
+  .header-top-area {
+    background-color: #081e34;
+    color: #ffffff;
+  }
+  
+  .header-top-area a,
+  .header-top-area li {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .main-menu nav ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    padding: 35px 18px;
+    transition: color 0.2s ease;
+  }
+  
+  .main-menu nav ul li a:hover,
+  .main-menu nav ul li.active > a {
+    color: #c9a24d;
+  }
+  
+  .main-menu nav ul li ul.submenu {
+    background: #0f2a44;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+  
+  .main-menu nav ul li ul.submenu li a {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  
+  .header-btn .btn {
+    background: #c9a24d;
+    color: #0b1f33;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 4px;
+  }
+  
+  .header-btn .btn:hover {
+    background: #b8923f;
+  }
+  
+  /* Sticky Nav */
+  .main-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  /* ================================
+   Horizontal Main Navigation
+   ================================ */
+
+.main-menu nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* aligns menu right */
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-menu nav ul li ul.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  display: none;
+}
+
+.main-menu nav ul li:hover > ul.submenu {
+  display: block;
+}
+
+.main-menu nav ul li.active > a {
+  color: #c9a24d;
+  font-weight: 600;
+}
+
+.main-menu nav ul li.active > a::after {
+  content: '';
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 24px;
+  height: 2px;
+  background-color: #c9a24d;
+}
+
+.main-menu nav ul li a {
+  padding: 28px 16px;
+}
+
+@media (max-width: 991px) {
+  .main-menu nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ================================
+   Header Top Info Bar
+   ================================ */
+
+   .header-top-area {
+    background-color: #081e34;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  .header-top-area .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-top-area ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .header-top-area ul li {
+    color: #d1d5db;
+    font-weight: 400;
+  }
+  
+  .header-top-area ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .header-top-area ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Optional icon spacing if FontAwesome is used */
+  .header-top-area ul li i {
+    margin-right: 6px;
+    color: #c9a24d;
+  }
+  
+  
+  /* ==================================================
+     Hero / Slider (Home + Services)
+     ================================================== */
+  
+  .slider-area .single-slider {
+    position: relative;
+  }
+  
+  .slider-area .single-slider::before,
+  .services-hero-area .hero-overlay {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      rgba(8, 30, 52, 0.75),
+      rgba(8, 30, 52, 0.55)
+    );
+    z-index: 1;
+  }
+  
+  .slider-content,
+  .services-hero-area .container {
+    position: relative;
+    z-index: 2;
+  }
   
   .slider-content h2 {
     font-size: 48px;
     max-width: 720px;
+    color: #ffffff;
   }
   
   .slider-content p {
     font-size: 18px;
     margin-top: 15px;
     margin-bottom: 30px;
+    color: #d1d5db;
   }
   
-  /* ---------- Section Spacing ---------- */
+  .slider-content .btn {
+    background-color: #ffffff;
+    color: #0b1f33;
+    font-weight: 600;
+    padding: 14px 34px;
+  }
+  
+  /* ==================================================
+     Section Layout
+     ================================================== */
   
   .services-area,
   .about-area,
@@ -57,9 +259,21 @@ body {
   .section-title span {
     font-weight: 600;
     letter-spacing: 1px;
+    color: #6b7280;
   }
   
-  /* ---------- Service Cards ---------- */
+  .section-title h2 {
+    font-size: 36px;
+  }
+  
+  .section-title p {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  
+  /* ==================================================
+     Services Cards
+     ================================================== */
   
   .single-services-box {
     background: #ffffff;
@@ -68,6 +282,9 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.06);
     transition: all 0.3s ease;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
   
   .single-services-box:hover {
@@ -75,22 +292,54 @@ body {
     box-shadow: 0 12px 35px rgba(0,0,0,0.08);
   }
   
+  .services-image img {
+    border-radius: 4px;
+  }
+  
+  .services-content {
+    flex-grow: 1;
+  }
+  
   .single-services-box h3 {
     margin-top: 20px;
     font-size: 20px;
+    line-height: 1.3;
   }
   
   .single-services-box p {
     margin-top: 12px;
   }
   
-  /* ---------- About Section ---------- */
+  .single-services-box .read-more {
+    font-weight: 600;
+    color: #0b1f33;
+  }
+  
+  .single-services-box .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* ==================================================
+     About Page
+     ================================================== */
+  
+  .about-content span {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #6b7280;
+  }
+  
+  .about-content h2 {
+    margin-top: 10px;
+  }
   
   .about-content ul li {
     margin-bottom: 10px;
   }
   
-  /* ---------- CTA ---------- */
+  /* ==================================================
+     CTA
+     ================================================== */
   
   .cta-area {
     background: #0b1f33;
@@ -109,135 +358,97 @@ body {
     padding: 14px 36px;
   }
   
-  /* ---------- Breadcrumb ---------- */
+  /* ==================================================
+     Breadcrumbs
+     ================================================== */
   
-  .page-title-area {
+  .page-title-area,
+  .breadcrumb-area {
+    background-color: #f4f7fb;
     padding: 80px 0 60px;
   }
   
-  /* ---------- Mobile Tweaks ---------- */
+  .page-title-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0b1f33;
+  }
   
-  @media (max-width: 767px) {
-    .slider-content h2 {
-      font-size: 34px;
-    }
+  .page-title-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .page-title-content ul li {
+    display: inline-block;
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .page-title-content ul li::after {
+    content: "/";
+    margin: 0 8px;
+    color: #9ca3af;
+  }
+  
+  .page-title-content ul li:last-child::after {
+    display: none;
   }
   
   /* ==================================================
-   FINAL POLISH PASS — BRAND FINISH
-   ================================================== */
-
-/* ---------- Header / Nav ---------- */
-
-.header-top-area {
-    background-color: #0b1f33;
+     Contact Page
+     ================================================== */
+  
+  .contact-form-wrapper {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 6px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-form p {
+    margin-bottom: 30px;
+    max-width: 480px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .contact-form .btn {
+    background: #0b1f33;
     color: #ffffff;
-  }
-  
-  .header-top-area a,
-  .header-top-area li {
-    color: #ffffff;
-    font-weight: 500;
-  }
-  
-  .header-menu-area {
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-  }
-  
-  /* ---------- Hero Contrast ---------- */
-  
-  .single-slider::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(11, 31, 51, 0.55);
-  }
-  
-  .single-slider {
-    position: relative;
-  }
-  
-  .slider-content {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .slider-content .btn {
-    background-color: #ffffff;
-    color: #0b1f33;
+    padding: 14px 38px;
     font-weight: 600;
-    padding: 14px 34px;
   }
   
-  /* ---------- Section Headings ---------- */
-  
-  .section-title h2 {
-    font-size: 36px;
+  .contact-note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
   }
   
-  .section-title p {
-    max-width: 720px;
-    margin: 0 auto;
+  .contact-info-box {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 6px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
   }
   
-  /* ---------- Services Cards ---------- */
-  
-  .single-services-box {
-    text-align: left;
-  }
-  
-  .single-services-box h3 {
-    font-size: 20px;
-    line-height: 1.3;
-  }
-  
-  .single-services-box .read-more {
-    font-weight: 600;
-    color: #0b1f33;
-  }
-  
-  .single-services-box .read-more:hover {
-    text-decoration: underline;
-  }
-  
-  /* ---------- About Section ---------- */
-  
-  .about-content span {
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
-  
-  .about-content h2 {
-    margin-top: 10px;
-  }
-  
-  /* ---------- Footer ---------- */
-  
-  .footer-area {
-    background-color: #0b1f33;
-    color: #ffffff;
-  }
-  
-  .footer-area a {
-    color: #ffffff;
-  }
-  
-  .footer-area p {
-    color: #cfd6dd;
-  }
-  
-  /* ---------- Mobile Refinement ---------- */
-  
-  @media (max-width: 767px) {
-    .section-title h2 {
-      font-size: 28px;
-    }
-  
-    .slider-content h2 {
-      font-size: 30px;
-    }
-  }
-
+  /* ==================================================
+     Alerts
+     ================================================== */
   
   .alert-danger {
     background-color: #fbeaea;
@@ -245,87 +456,85 @@ body {
     color: #7a1f1f;
   }
   
+  /* ==================================================
+     Mobile Refinements
+     ================================================== */
+  
+  @media (max-width: 991px) {
+    .contact-form-wrapper {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .slider-content h2 {
+      font-size: 30px;
+    }
+  
+    .section-title h2 {
+      font-size: 28px;
+    }
+  }
+  
   /* ================================
-   Contact Page Formatting
+   Footer Layout & Links
    ================================ */
 
-.contact-form-wrapper {
-  background: #ffffff;
-  padding: 50px;
-  border-radius: 6px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+.footer-area {
+  background-color: #0b1f33;
+  padding: 70px 0 40px;
+  color: #cfd6dd;
 }
 
-.contact-form h2 {
+.footer-area h3,
+.footer-area h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-area p {
+  color: #cfd6dd;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.footer-area ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-area ul li {
   margin-bottom: 10px;
 }
 
-.contact-form p {
-  margin-bottom: 30px;
-  max-width: 480px;
+.footer-area ul li a {
+  color: #cfd6dd;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 14px 16px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.contact-form .btn {
-  background: #0b1f33;
+.footer-area ul li a:hover {
   color: #ffffff;
-  padding: 14px 38px;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #9ca3af;
+  text-align: center;
+}
+
+.footer-contact strong {
+  color: #ffffff;
   font-weight: 600;
 }
 
-.contact-note {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #666;
+.footer-contact a {
+  color: #c9a24d;
 }
-
-/* Mobile polish */
-@media (max-width: 991px) {
-  .contact-form-wrapper {
-    padding: 30px;
-  }
-}
-
-/* ================================
-   Contact Info Cards
-   ================================ */
-
-   .contact-info-box {
-    background: #ffffff;
-    padding: 30px 20px;
-    border-radius: 6px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
-  }
-  
-  .contact-info-box h4 {
-    margin-bottom: 8px;
-    font-size: 18px;
-  }
-  
-  .contact-info-box p {
-    margin: 0;
-    font-size: 15px;
-  }
-  
-  .contact-info-box a {
-    color: #0b1f33;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  
-  .contact-info-box a:hover {
-    text-decoration: underline;
-  }
-  

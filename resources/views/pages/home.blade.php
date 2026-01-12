@@ -8,14 +8,18 @@
 <section class="slider-area">
     <div class="slider-active">
         <div class="single-slider"
-             style="background-image:url({{ asset('assets/transland/images/slider/slider1.jpg') }})">
+             style="background-image:url({{ asset('assets/transland/images/slider/slider1.png') }})">
             <div class="container">
                 <div class="slider-content text-left">
-                    <h2>Reliable Maritime & Logistics Solutions</h2>
-                    <p>Let us walk the last mile with you.</p>
+                    <h2>Global Logistics, Maritime & Air Freight Solutions</h2>
+                    <p>
+                        Tercum LLC provides coordinated maritime, air freight, logistics,
+                        and procurement services supporting time-sensitive and
+                        compliance-driven operations worldwide.
+                    </p>
 
                     <a href="{{ url(app()->getLocale().'/contact') }}" class="btn">
-                        Get Started
+                        Start a Conversation
                     </a>
                 </div>
             </div>
@@ -31,8 +35,8 @@
 
 {{-- CALL TO ACTION --}}
 @include('partials.cta', [
-    'text' => 'Looking for a dependable logistics partner?',
-    'buttonText' => 'Request a Quote'
+    'text' => 'Looking for a logistics partner you can rely on?',
+    'buttonText' => 'Contact Our Team'
 ])
 
 @endsection
