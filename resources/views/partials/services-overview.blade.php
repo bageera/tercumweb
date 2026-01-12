@@ -9,19 +9,19 @@
         [
             'title' => 'Air Freight',
             'description' => 'Time-critical air freight coordination for priority cargo and international supply chains.',
-            'image' => 'assets/transland/images/services/service-air-freight.jpg',
+            'image' => 'assets/transland/images/services/service-air-freight.png',
             'link' => url(app()->getLocale().'/services'),
         ],
         [
             'title' => 'Freight & Logistics',
             'description' => 'End-to-end freight coordination with an emphasis on reliability, compliance, and operational continuity.',
-            'image' => 'assets/transland/images/services/service-logistics-coordination.jpg',
+            'image' => 'assets/transland/images/services/service-logistics-coordination.png',
             'link' => url(app()->getLocale().'/services'),
         ],
         [
             'title' => 'Procurement Services',
             'description' => 'Sourcing and procurement support for logistics-related goods, equipment, and operational requirements.',
-            'image' => 'assets/transland/images/services/service-procurement.jpg',
+            'image' => 'assets/transland/images/services/service-procurement.png',
             'link' => url(app()->getLocale().'/services'),
         ],
     ];
