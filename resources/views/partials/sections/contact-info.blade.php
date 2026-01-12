@@ -13,7 +13,7 @@
                 <div class="single-contact-info">
                     <i class="fas fa-phone"></i>
                     <h3>Phone</h3>
-                    <p>+1 (XXX) XXX-XXXX</p>
+                    <p>+1 (689) 226-6560</p>
                 </div>
             </div>
 
