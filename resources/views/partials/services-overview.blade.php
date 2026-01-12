@@ -3,7 +3,7 @@
         [
             'title' => 'Maritime Shipping',
             'description' => 'Port coordination, vessel support, and maritime logistics services supporting domestic and international operations.',
-            'image' => 'assets/transland/images/services/service-maritime-ops.jpg',
+            'image' => 'assets/transland/images/services/service-maritime-ops.png',
             'link' => url(app()->getLocale().'/services'),
         ],
         [
