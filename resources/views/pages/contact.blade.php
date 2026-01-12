@@ -11,96 +11,127 @@
 ])
 
 {{-- CONTACT HERO --}}
-<section class="contact-hero-area pt-100 pb-70">
+<section class="contact-hero-area pt-100 pb-60">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
+            <div class="col-lg-9 text-center">
                 <span class="sub-title">Contact Us</span>
                 <h1>Let’s Talk Logistics</h1>
                 <p>
-                    Have a question, need a quote, or want to discuss your logistics needs?
-                    Our team is ready to help.
+                    Whether you’re requesting a quote, planning a shipment, or exploring a
+                    long-term logistics partnership, our team is ready to support your
+                    operations — wherever they take place.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-{{-- CONTACT INFO --}}
+{{-- CONTACT INFO (SINGLE, CLEAN CTA) --}}
 @include('partials.sections.contact-info')
 
 {{-- CONTACT FORM --}}
 <section class="contact-form-area pb-100">
     <div class="container">
+
         <div class="row justify-content-center">
-
             <div class="col-lg-8">
-                <div class="contact-form">
+                <div class="contact-form-wrapper">
 
-                    <h2>Send Us a Message</h2>
-                    <p>
-                        Complete the form below and a member of our team will respond
-                        as soon as possible.
-                    </p>
+                    <div class="contact-form">
 
-                    <form method="POST" action="{{ url(app()->getLocale().'/contact') }}">
-                        @csrf
-
-                        {{-- Honeypot --}}
-                        <input type="text" name="website" style="display:none">
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input
-                                    type="text"
-                                    name="name"
-                                    placeholder="Your Name"
-                                    required
-                                >
+                        {{-- FLASH SUCCESS --}}
+                        @if (session('success'))
+                            <div class="alert alert-success mb-4">
+                                {{ session('success') }}
                             </div>
+                        @endif
 
-                            <div class="col-md-6">
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="Email Address"
-                                    required
-                                >
+                        {{-- VALIDATION ERRORS --}}
+                        @if ($errors->any())
+                            <div class="alert alert-danger mb-4">
+                                <ul class="mb-0">
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
                             </div>
+                        @endif
 
-                            <div class="col-md-12">
-                                <input
-                                    type="text"
-                                    name="company"
-                                    placeholder="Company (Optional)"
-                                >
+                        <h2>Send Us a Message</h2>
+                        <p>
+                            Share a few details about your logistics needs and a member of
+                            our team will follow up shortly. We work across regions and
+                            time zones and typically respond within one business day.
+                        </p>
+
+                        <form method="POST" action="{{ url(app()->getLocale().'/contact') }}">
+                            @csrf
+                            {{-- Honeypot --}}
+                            <input type="text" name="website" style="display:none">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value="{{ old('name') }}"
+                                        placeholder="Your Name"
+                                        required
+                                    >
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value="{{ old('email') }}"
+                                        placeholder="Email Address"
+                                        required
+                                    >
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input
+                                        type="text"
+                                        name="company"
+                                        value="{{ old('company') }}"
+                                        placeholder="Company (Optional)"
+                                    >
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea
+                                        name="message"
+                                        rows="6"
+                                        placeholder="How can we support your logistics needs?"
+                                        required
+                                    >{{ old('message') }}</textarea>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <button
+                                        type="submit"
+                                        class="btn"
+                                        onclick="this.disabled=true; this.form.submit();"
+                                    >
+                                        Send Message
+                                    </button>
+                                </div>
                             </div>
+                        </form>
 
-                            <div class="col-md-12">
-                                <textarea
-                                    name="message"
-                                    placeholder="How can we help you?"
-                                    rows="6"
-                                    required
-                                ></textarea>
-                            </div>
+                        <p class="contact-note">
+                            Your information is handled confidentially and used only to
+                            respond to your inquiry.
+                        </p>
 
-                            <div class="col-md-12">
-                                <button type="submit" class="btn">
-                                    Send Message
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-
-                    <p class="contact-note">
-                        We typically respond within one business day.
-                    </p>
+                    </div>
 
                 </div>
             </div>
-
         </div>
+
     </div>
 </section>
 

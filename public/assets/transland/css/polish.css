@@ -245,3 +245,87 @@ body {
     color: #7a1f1f;
   }
   
+  /* ================================
+   Contact Page Formatting
+   ================================ */
+
+.contact-form-wrapper {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 6px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  margin-bottom: 30px;
+  max-width: 480px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  background: #0b1f33;
+  color: #ffffff;
+  padding: 14px 38px;
+  font-weight: 600;
+}
+
+.contact-note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Mobile polish */
+@media (max-width: 991px) {
+  .contact-form-wrapper {
+    padding: 30px;
+  }
+}
+
+/* ================================
+   Contact Info Cards
+   ================================ */
+
+   .contact-info-box {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 6px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  }
+  
+  .contact-info-box h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  .contact-info-box p {
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  .contact-info-box a {
+    color: #0b1f33;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .contact-info-box a:hover {
+    text-decoration: underline;
+  }
+  
