@@ -20,7 +20,7 @@
                 <div class="col-lg-4">
                     <h4>Contact</h4>
                     <p>Email: info@tercumllc.com</p>
-                    <p>Phone: +1 (XXX) XXX-XXXX</p>
+                    <p>Phone: +1 (689) 226-6560</p>
                 </div>
             </div>
         </div>
