@@ -11,7 +11,7 @@
              style="background-image:url({{ asset('assets/transland/images/slider/slider1.png') }})">
             <div class="container">
                 <div class="slider-content text-left">
-                    <h2>Global Logistics, Maritime & Air Freight Solutions</h2>
+                    <h2>Global Logistics Solutions</h2>
                     <p>
                         Tercum LLC provides coordinated maritime, air freight, logistics,
                         and procurement services supporting time-sensitive and
