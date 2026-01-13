@@ -33,7 +33,7 @@
         [
             'title' => 'Urban Development & Planning',
             'description' => 'Strategic planning and development support for urban, port, and transportation-focused projects.',
-            'image' => 'assets/transland/images/services/service-urban-planning.jpg',
+            'image' => 'assets/transland/images/services/service-urban-planning.png',
             'link' => url(app()->getLocale().'/services'),
         ],
     ];
@@ -46,7 +46,7 @@
 
         <div class="section-title text-center">
             <span>Our Services</span>
-            <h2>Maritime & Logistics Capabilities</h2>
+            <h2>Logistics & Maritime Capabilities</h2>
             <p>
                 Tercum LLC combines management expertise with advanced maritime technology
                 to deliver reliable, compliant, and mission-focused solutions across
