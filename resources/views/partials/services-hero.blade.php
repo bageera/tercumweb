@@ -1,5 +1,5 @@
 <section class="services-hero-area pt-100 pb-70"
-    style="background-image:url({{ asset('assets/transland/images/services/services-hero-multimodal.jpg') }});
+    style="background-image:url({{ asset('assets/transland/images/services/services-hero-multimodal.png') }});
            background-size: cover;
            background-position: center;
            position: relative;">

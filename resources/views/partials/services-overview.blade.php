@@ -24,8 +24,21 @@
             'image' => 'assets/transland/images/services/service-procurement.png',
             'link' => url(app()->getLocale().'/services'),
         ],
+        [
+            'title' => 'Architectural Services',
+            'description' => 'Planning and architectural support for logistics facilities, maritime infrastructure, and operational environments.',
+            'image' => 'assets/transland/images/services/service-architectural.png',
+            'link' => url(app()->getLocale().'/services'),
+        ],
+        [
+            'title' => 'Urban Development & Planning',
+            'description' => 'Strategic planning and development support for urban, port, and transportation-focused projects.',
+            'image' => 'assets/transland/images/services/service-urban-planning.jpg',
+            'link' => url(app()->getLocale().'/services'),
+        ],
     ];
 @endphp
+
 
 
 <section class="services-area pt-100 pb-70">
