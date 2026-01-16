@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Tercum LLC – Logistics & Maritime Services')
-
+@section('title', 'Logistics, Maritime & Infrastructure Services | Tercum LLC')
+@section('meta_description', 'Tercum LLC provides integrated logistics, maritime, procurement, architectural, and urban development services supporting complex domestic and international operations.')
 @section('content')
 
 {{-- HERO / SLIDER --}}
