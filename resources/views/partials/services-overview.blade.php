@@ -25,17 +25,18 @@
             'link' => url(app()->getLocale().'/services'),
         ],
         [
-            'title' => 'Architectural Services',
-            'description' => 'Planning and architectural support for logistics facilities, maritime infrastructure, and operational environments.',
+            'title' => 'Architectural & Project Management Services',
+            'description' => 'Comprehensive architectural and project management services supporting logistics, industrial, maritime, and port-related infrastructure, as well as commercial, institutional, hospitality, residential, and mixed-use developments.',
             'image' => 'assets/transland/images/services/service-architectural.png',
             'link' => url(app()->getLocale().'/services'),
         ],
         [
-            'title' => 'Urban Development & Planning',
-            'description' => 'Strategic planning and development support for urban, port, and transportation-focused projects.',
+            'title' => 'Urban Planning & Development Services',
+            'description' => 'Strategic planning and development support for urban environments, ports, transportation corridors, and infrastructure systems, including master planning and long-term development coordination.',
             'image' => 'assets/transland/images/services/service-urban-planning.png',
             'link' => url(app()->getLocale().'/services'),
         ],
+
     ];
 @endphp
 

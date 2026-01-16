@@ -32,7 +32,7 @@
 </section>
 
 {{-- SERVICES OVERVIEW --}}
-@include('partials.services-overview')
+@include('partials.services-expanded')
 
 {{-- VALUE STATEMENT --}}
 <section class="about-area pt-80 pb-80">
