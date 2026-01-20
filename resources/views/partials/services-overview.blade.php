@@ -47,7 +47,7 @@
 
         <div class="section-title text-center">
             <span>Our Services</span>
-            <h2>Logistics & Maritime Capabilities</h2>
+            <h2>Logistics & Maritime & Architectural Capabilities</h2>
             <p>
                 Tercum LLC combines management expertise with advanced maritime technology
                 to deliver reliable, compliant, and mission-focused solutions across
