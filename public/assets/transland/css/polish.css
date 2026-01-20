@@ -589,3 +589,53 @@
     overflow: hidden;
   }
     
+
+  /* Logo */
+.site-logo {
+  max-height: 46px;
+  width: auto;
+  display: block;
+}
+
+/* Top info spacing */
+.top-info {
+  display: flex;
+  gap: 22px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.top-info li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.top-info i {
+  margin-right: 8px;
+  color: #c9a24d;
+}
+
+/* Navigation */
+.main-menu nav ul.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-menu nav ul.navigation li {
+  margin-left: 6px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .top-info {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .site-logo {
+    max-height: 38px;
+  }
+}
