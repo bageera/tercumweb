@@ -7,18 +7,21 @@
         <div class="container">
             <div class="row align-items-center">
 
-                {{-- LOGO --}}
+
+            {{-- LOGO --}}
                 <div class="col-lg-3 col-md-4 col-6">
-                    <div class="logo">
-                        <a href="{{ url(app()->getLocale()) }}">
+                    <div class="logo d-flex align-items-center">
+                        <a href="{{ url(app()->getLocale()) }}" class="logo-link">
                             <img
                                 src="{{ asset('assets/transland/images/logo/tercum-logo.png') }}"
-                                alt="Tercum LLC"
+                                alt="Tercum LLC Logo"
                                 class="site-logo"
                             >
                         </a>
                     </div>
                 </div>
+
+               
 
                 {{-- NAV --}}
                 <div class="col-lg-9 col-md-8 col-6">

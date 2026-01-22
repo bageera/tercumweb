@@ -12,11 +12,7 @@
             <div class="container">
                 <div class="slider-content text-left">
                     <h2>Global Logistics Solutions</h2>
-                    <p>
-                        Tercum LLC provides coordinated maritime, air freight, logistics,
-                        and procurement services supporting time-sensitive and
-                        compliance-driven operations worldwide.
-                    </p>
+                    
 
                     <a href="{{ url(app()->getLocale().'/contact') }}" class="btn">
                         Start a Conversation

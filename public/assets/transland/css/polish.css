@@ -639,3 +639,60 @@
     max-height: 38px;
   }
 }
+
+
+/* ================================
+   Brand Emphasis – Logo
+   ================================ */
+
+   .site-logo {
+    max-height: 48px;
+    width: auto;
+  }
+  
+  .logo-link {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  /* ================================
+     Hero Title Centering
+     ================================ */
+  
+  .slider-content {
+    text-align: center;
+  }
+  
+  .slider-content h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slider-content p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;
+  }
+  
+  /* CTA spacing */
+  .slider-content .btn {
+    margin-top: 20px;
+  }
+
+  /* ================================
+   Logo Emphasis (Desktop)
+   ================================ */
+
+.site-logo {
+  max-height: 64px;   /* was ~48px */
+  width: auto;
+  transition: all 0.2s ease;
+}
+
+.header-menu-area {
+  padding: 10px 0;
+}
+
+.site-logo {
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.35));
+}
