@@ -13,6 +13,10 @@
             'name' => 'International Shipping Partner',
             'logo' => 'assets/transland/images/partners/star_logo_original-01.png',
         ],
+        [
+            'name' => 'DHL GoGreen',
+            'logo' => 'assets/transland/images/partners/dhl_logo.png',
+        ],
     ];
 @endphp
 
@@ -26,8 +30,8 @@
             <p>
                 At Tercum, our strength lies in the partnerships we’ve built.
                 We work with a global network of reliable carriers, freight
-                forwarders, and logistics providers to ensure your shipments
-                arrive safely and on time — anywhere in the world.
+                forwarders, and logistics providers to ensure shipments are
+                handled responsibly, efficiently, and reliably worldwide.
             </p>
         </div>
 
@@ -36,11 +40,12 @@
             @foreach ($partners as $partner)
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
                     <div class="partner-logo">
-                        <img
+                    <img
                             src="{{ asset($partner['logo']) }}"
                             alt="{{ $partner['name'] }}"
-                            style="max-height: 80px; width: auto;"
-                        >
+                            loading="lazy"
+                            class="partner-logo-img"
+                        />
                     </div>
                 </div>
             @endforeach

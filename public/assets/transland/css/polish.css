@@ -696,3 +696,47 @@
 .site-logo {
   filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.35));
 }
+
+/* ================================
+   Trusted Partners – Emphasis Pass
+   ================================ */
+
+   .partner-area {
+    background-color: #ffffff;
+  }
+  
+  .partner-logo {
+    padding: 20px 10px;
+  }
+  
+  .partner-logo-img {
+    max-height: 110px;      /* was ~80px */
+    max-width: 240px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0%); /* keep full color for brand credibility */
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  
+  .partner-logo-img:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+  }
+  
+  /* Tablet */
+  @media (max-width: 991px) {
+    .partner-logo-img {
+      max-height: 95px;
+      max-width: 200px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 575px) {
+    .partner-logo-img {
+      max-height: 80px;
+      max-width: 180px;
+    }
+  }
+  
