@@ -21,6 +21,7 @@
                 <div class="single-contact-info">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Location</h3>
+                    <p>6885 Lake Nona Blvd, Orlando, FL 32827</p>
                     <p>United States</p>
                 </div>
             </div>
