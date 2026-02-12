@@ -21,7 +21,9 @@
                     <h4>Contact</h4>
                     <p>Email: info@tercumllc.com</p>
                     <p>Phone: +1 (689) 226-6560</p>
-                    <p>Address: 6885 Lake Nona Blvd, Orlando, FL 32827
+                    <p>Address: 6900 Tavistock Lakes Blvd</p>
+                    <p> Lake Nona</p>
+                     <p>Orlando, FL 32827</p>
                 </div>
             </div>
         </div>
