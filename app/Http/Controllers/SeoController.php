@@ -6,17 +6,19 @@ use Illuminate\Http\Response;
 
 class SeoController extends Controller
 {
-    public function robots(): Response {
+    public function robots(): Response
+    {
         return response(
-            "User-agent: *\nAllow: /\nSitemap: " . url('/sitemap.xml'),
+            "User-agent: *\nAllow: /\nSitemap: ".url('/sitemap.xml'),
             200,
             ['Content-Type' => 'text/plain']
         );
     }
 
-    public function sitemap(): Response {
-        $locales = ['en','es','fr'];
-        $paths = ['','about','services','industries','projects','blog','contact','privacy','terms'];
+    public function sitemap(): Response
+    {
+        $locales = ['en', 'es', 'fr'];
+        $paths = ['', 'about', 'services', 'industries', 'projects', 'blog', 'contact', 'privacy', 'terms'];
 
         $urls = [];
         foreach ($locales as $l) {
@@ -27,5 +29,11 @@ class SeoController extends Controller
 
         return response()->view('seo.sitemap', compact('urls'))
             ->header('Content-Type', 'application/xml');
+    }
+
+    public function llms(): Response
+    {
+        return response()->view('seo.llms')
+            ->header('Content-Type', 'text/plain');
     }
 }

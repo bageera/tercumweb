@@ -8,6 +8,45 @@
     <meta name="description" content="@yield('meta_description', 'Maritime & Logistics Services')">
     <link rel="canonical" href="{{ url()->current() }}">
 
+    @verbatim
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Tercum LLC",
+        "url": "{{ url('/') }}",
+        "logo": "{{ asset('assets/transland/images/logo.png') }}",
+        "description": "Tercum LLC provides integrated logistics, maritime, procurement, architectural, and urban development services supporting complex domestic and international operations.",
+        "sameAs": [
+            "https://www.linkedin.com/company/tercumllc"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "customer service",
+            "availableLanguage": ["English", "Spanish", "French"]
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Tercum LLC",
+        "image": "{{ asset('assets/transland/images/logo.png') }}",
+        "url": "{{ url('/') }}",
+        "priceRange": "$$",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    </script>
+    @endverbatim
+
     <!-- CSRF -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 

@@ -1,14 +1,13 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\SeoController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{
-    PageController,
-    ContactController,
-    SeoController
-};
 
 Route::get('/robots.txt', [SeoController::class, 'robots']);
 Route::get('/sitemap.xml', [SeoController::class, 'sitemap']);
+Route::get('/llms.txt', [SeoController::class, 'llms']);
 
 Route::redirect('/', '/en');
 
